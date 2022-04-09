@@ -63,3 +63,43 @@ h2{
   border: none;
   margin: auto 5px;
 }
+
+.adminPanel{
+  text-align: center;
+  background-color: hsl(271, 39%, 69%);
+  color: white;
+  height : 600px;
+  margin-top: -100px;
+  margin-left: -10px;
+  font-size: 85px;
+}
+
+.adminPanel h3{
+  background-color: blueviolet;
+}
+
+.adminLogin h3{
+  background-color: blueviolet;
+}
+
+.adminLogin{
+  text-align: center;
+  background-color: hsl(271, 39%, 69%);
+  color: white;
+  height : 500px;
+  margin-top: -100px;
+  margin-left: -10px;
+  font-size: 85px;
+}
+
+.adminLoginInputs{
+  color: black;
+  height: 100px;
+  font-size: 30px;
+}
+
+.adminPanelInputs{
+  color: black;
+  height: 100px;
+  font-size: 30px;
+}

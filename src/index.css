@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+.post{
+  width: 90%;
+    margin: auto;
+    max-height: 500px;
+    display: block;
+    float: left;
+  margin-bottom: 100px;
+  border: solid black 3px;
+  background-color: hsl(271, 39%, 69%);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  
+}
+img{
+  max-width: 500px;
+  max-height: 350px;
+  margin: 5px;
+  border: solid black 3px;
+
+  
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  height: auto;
+  background-color: blueviolet;
+  color: white;
+  border-bottom: solid black 3px;
+
+
+}
+.post div{
+  display: block;
+  float: left;
+  width: 50%;   
+}
+.header{
+  width: 100%;
+  height: 150px;
+}
+.header div{
+  width: 100%;
+  display: block;
+  float: left;
+}
+.authors{
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+  height : 125px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-size: 85px;
+}
+.buttons{
+  background-color: hsl(271, 39%, 69%);
+  height: 25px;
+  margin-top: -10px;
+  margin-left: -10px;   
+}
+.buttons button{
+  background-color: white;
+  border: none;
+  margin: auto 5px;
 }

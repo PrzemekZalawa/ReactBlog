@@ -1,0 +1,110 @@
+.post{
+  width: 90%;
+    margin: auto;
+    /* max-height: 500px; */
+    display: block;
+    float: left;
+  margin-bottom: 100px;
+  border: solid black 3px;
+  background-color: hsl(271, 39%, 69%);
+
+  
+}
+img{
+  max-width: 500px;
+  max-height: 350px;
+  margin: 5px;
+  border: solid black 3px;
+
+  
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  height: auto;
+  background-color: blueviolet;
+  color: white;
+  border-bottom: solid black 3px;
+  position: relative;
+
+}
+.post div{
+  display: block;
+  float: left;
+  width: 50%;   
+}
+.header{
+  width: 100%;
+  height: 150px;
+}
+.header div{
+  width: 100%;
+  display: block;
+  float: left;
+}
+.authors{
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+  height : 125px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-size: 85px;
+}
+.buttons{
+  background-color: hsl(271, 39%, 69%);
+  height: 25px;
+  margin-top: -10px;
+  margin-left: -10px;   
+}
+.buttons button{
+  background-color: white;
+  border: none;
+  margin: auto 5px;
+}
+
+.adminPanel{
+  text-align: center;
+  background-color: hsl(271, 39%, 69%);
+  color: white;
+  height : 600px;
+  margin-top: -100px;
+  margin-left: -10px;
+  font-size: 85px;
+}
+
+.adminPanel h3{
+  background-color: blueviolet;
+}
+
+.adminLogin h3{
+  background-color: blueviolet;
+}
+
+.adminLogin{
+  text-align: center;
+  background-color: hsl(271, 39%, 69%);
+  color: white;
+  height : 500px;
+  margin-top: -100px;
+  margin-left: -10px;
+  font-size: 85px;
+}
+
+.adminLoginInputs{
+  color: black;
+  height: 100px;
+  font-size: 30px;
+}
+
+.adminPanelInputs{
+  color: black;
+  height: 100px;
+  font-size: 30px;
+}
+.buttonExecutoner{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+}

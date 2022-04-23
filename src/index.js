@@ -1,15 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 // import {Posts} from './Post'
 
 import reportWebVitals from './reportWebVitals';
 import Blog from './Blog';
+import AdminPanel from './AdminPanel';
+import AdminLogin from './AdminLogin';
 
 
 ReactDOM.render(
-  <Blog/>,
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Blog/>}/>
+      <Route path='AdminPanel' element={<AdminPanel/>}/>
+      <Route path='AdminLogin' element={<AdminLogin/>}/>
+    </Routes>
+    
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );
 

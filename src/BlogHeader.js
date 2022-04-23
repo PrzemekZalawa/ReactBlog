@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 class BlogHeader extends React.Component{
     render(){
@@ -6,8 +7,8 @@ class BlogHeader extends React.Component{
         <div className='header'>
           <div className='authors'>Przemek Zaława &amp; Mateusz Cupiał</div>
           <div className='buttons'>
-            <button onClick={this.props.changeToAdminPanel}>Admin Panel</button>
-            <button onClick={this.props.changeToAdminLogin}>Log in</button>
+            <Link to="/AdminPanel">Admin Panel</Link>
+            <Link to="/AdminLogin">Log in</Link>
           </div>
         </div>
       )

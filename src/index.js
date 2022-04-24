@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+
 
 // import {Posts} from './Post'
 
@@ -16,14 +12,7 @@ import AdminLogin from './AdminLogin';
 
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Blog/>}/>
-      <Route path='AdminPanel' element={<AdminPanel/>}/>
-      <Route path='AdminLogin' element={<AdminLogin/>}/>
-    </Routes>
-    
-  </BrowserRouter>
+  <Blog/>
   ,
   document.getElementById('root')
 );

@@ -108,3 +108,7 @@ h2{
         top: 0px;
         right: 0px;
 }
+
+.stopDisplaying{
+  display: none;
+}

@@ -12,7 +12,7 @@ import {
 } from "firebase/firestore";
 
 
-function Posts() {
+function Posts(props) {
     const [posts ,setPosts] = useState([])
     const ref = collection(db,"posts")
     useEffect(() => {
@@ -26,24 +26,44 @@ function Posts() {
       const postToDelete = doc(db,'posts',id);
       await deleteDoc(postToDelete);
     }
+    
      return(
         
         posts.map((element) => {
             
-            return (
-        <div className='post'>
-        <h2>{element.Tittle}
-        <button className="buttonExecutoner" onClick={()=>deletePost(element.id)}>X</button>
-        </h2>
-        <div>
-          <img src={element.Image}/> 
-        </div>
-        <div>
-          <p>
-            {element.Content}
-         </p>
-        </div>
-      </div>
-     )}))
+            
+              if(!props.loggedIn){
+                return (
+                <div className='post'>
+                    <h2>{element.Tittle}
+        
+                    </h2>
+                  <div>
+                    <img src={element.Image}/> 
+                  </div>
+                  <div>
+                    <p>
+                      {element.Content}
+                    </p>
+                  </div>
+                </div>)
+              }else{
+
+                return (
+                <div className='post'>
+                  <h2>{element.Tittle}
+                    <button className="buttonExecutoner" onClick={()=>deletePost(element.id)}>X</button>
+                  </h2>
+                <div>
+                  <img src={element.Image}/> 
+                </div>
+                <div>
+                  <p>
+                    {element.Content}
+                  </p>
+                </div>
+                </div>)
+              }
+     }))
   }
 export default Posts;
